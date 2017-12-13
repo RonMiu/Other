@@ -1,0 +1,415 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-family: "Microsoft YaHei" !important;
+	min-width: 1200px;
+}
+a{
+	text-decoration: none;
+}
+
+//布局样式
+#layout(@name){
+
+	& when(@name=header){
+		height: 60px;
+		#bg-color(black);
+	}
+	& when(@name=banner){
+		height: 560px;
+		#bg-color(pale);
+	}
+	& when(@name=recommend){
+		/*height: 800px;*/
+		#bg-color(white);
+	}
+	& when(@name=courses){
+		height: 686px;
+		#bg-color(pale);
+	}
+	& when(@name=footer){
+		height: 98px;
+		#bg-color(black);
+	}
+	position:relative;
+}
+
+#bg-color(@name){
+	& when(@name=black){
+		background-color: #000;
+	}
+	& when(@name=white){
+		background-color: #fff;
+	}
+	& when(@name=pale){
+		background-color: #f3f5f7;
+	}
+	& when(@name=night){
+		background-color: #4d555d;
+	}
+	& when(@name=dark){
+		background-color: #2b333b;
+	}
+	& when(@name=light){
+		background-color: #363c41;
+	}
+}
+
+#font-size(@name){
+	& when(@name=small){
+		font-size: 12px;
+	}
+	& when(@name=medium){
+		font-size: 14px;
+	}
+	& when(@name=large){
+		font-size: 16px;
+	}
+	& when(@name=title){
+		font-size: 32px;
+	}
+	& when(@name=huge){
+		font-size: 22px;
+	}
+}
+
+#color(@name){
+	& when(@name=dark){
+		color:#5c646b;
+	}
+	& when(@name=black){
+		color:#141914;
+	}
+	& when(@name=white){
+		color:#fbfbfb;
+	}
+	& when(@name=yellow){
+		color:#ffcc33;
+	}
+	& when(@name=red){
+		color:red;
+	}
+	& when(@name=weak){
+		color:#959aa0;
+	}
+
+}
+
+//课程模块样式定义
+#course-box(@name){
+	& when(@name=recommend){
+		@width: 285px;
+		width: @width;
+		height: 342px;
+		position: relative;
+		top: -140px;
+		box-shadow: 0 8px 16px rgba(7,17,27,.2);
+		#bg-color(white);
+		#bg-img("course-b-bg.png");
+	}
+	& when(@name=standard){
+		width: 224px;
+		height: 206px;
+		float: left;
+		margin:0px 20px 34px 0px;
+		box-shadow: 0 4px 8px rgba(7,17,27,.1);
+		#bg-color(white);
+		#bg-img("course-s-bg.png");
+	}
+}
+#decorate-bottom(){
+	&:before{
+		content:"";
+		display: block;
+		width: 96%;
+		height: 3px;
+		left: 2%;
+		bottom: -5px;
+		position: absolute;
+		box-shadow: 0 8px 16px rgba(7,17,27,.2);
+		#radius(4px);
+		#bg-color(white);
+	}
+}
+
+//功能样式定义
+#center-h(@width){
+	left: 50%;
+	margin-left: @width*-.5;
+}
+#bg-img(@src){
+	background+_: url("../imgs/@{src}");
+}
+#radius(@radius:50%){
+	border-radius: @radius;
+}
+#square(@w:10px){
+	width: @w;
+	height: @w;
+}
+#line-height(@h){
+	line-height: @h;
+	height: @h;
+}
+
+//通用样式
+.fl(){
+	float: left;
+}
+.fr(){
+	float: right;
+}
+.clearfix(){
+	&:after{
+		content:"";
+		display: block;
+		font-size: 0px;
+		line-height: 0px;
+		clear: both;
+		zoom:1;
+	}
+}
+.cover-background(){
+	background-size: contain;
+	background+_: no-repeat center;
+}
+.header{
+	#layout(header);
+
+	.logo{
+		width: 128px;
+		height: 36px;
+		margin: 12px 25px;
+		#bg-img("logo.png");
+		.cover-background();
+		.fl();
+	}
+
+	.nav{
+		height: 100%;
+		.fl();
+		&__item{
+			display: block;
+			.fl();
+			#line-height(60px);
+			padding: 0 25px;
+			#color(white);
+			#font-size(medium);
+			&:hover{
+				#bg-color(light);
+			};
+			&_icon_new{
+				#bg-img("icon-new.png");
+				background-repeat: no-repeat;
+				background-position: 80px 10px;
+				#bg-color(light);
+			}
+		}
+	}
+
+	.search{
+		padding-right: 25px;
+		position: relative;
+		margin: 12px 25px;
+		height: 36px;
+		.fr();
+		&__input{
+			width: 242px;
+			outline: none;
+			#bg-color(black);
+			#line-height(36px);
+			border: none;
+			border-bottom: 1px solid #ccc;
+		}
+		&::before{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			content:"前端入门";
+			display: block;
+			width: 72px;
+			#line-height(30px);
+			text-align: center;
+			#bg-color(dark);
+			#color(dark);
+			#font-size(small);
+		};
+		&__submit{
+			display: block;
+			position: absolute;
+			right: 25px;
+			top: 4px;
+			#square(22px);
+			#bg-img("icon-1-sprite_w22.png");
+			background-position: 0px 0px;
+		}
+	}
+
+	.profile{
+		.fr();
+		&__item{
+			position: relative;
+			display: block;
+			.fl();
+			#square(60px);
+			margin-right: 1px;
+		}
+		&__phone::before,
+		&__message::before,
+		&__mail::before{
+			content: "";
+			display: block;
+			position: absolute;
+			left: 19px;
+			top: 19px;
+			#square(22px);
+			#bg-img("icon-1-sprite_w22.png");
+		}
+		&__phone::before{
+			background-position: 0px -22px;
+		}
+		&__message::before{
+			background-position: 0px -44px;
+		}
+		&__mail::before{
+			background-position: 0px -66px;
+		}
+		&__ava{
+			#square(36px);
+			margin: 12px;
+			#bg-img("ava.jpg");
+			background-size: 100%;
+			#radius();
+		}
+	}
+}
+.banner{
+	#layout(banner);
+	width: 100%;
+	#bg-img("bg.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-position: center center;
+
+}
+.recommend{
+
+	#layout(recommend);
+	width: 1200px;
+	margin: 0 auto;
+	.clearfix();
+	.recommend-course{
+		#decorate-bottom();
+		.fl();
+		#course-box(recommend);
+		#radius(5px);
+		margin: 0px 20px 50px 0px;
+		&:nth-child(4n){
+			margin-right: 0px;
+		};
+		&:last-child{
+			#center-h(285px);
+		};
+		&__cover{
+			width: 100%;
+			height: 172px;
+			overflow: hidden;
+			margin: 0px;
+			#radius(5px);
+			img{
+				width: 100%;
+			}
+		}
+		.caption{
+			margin: 0px;
+			padding: 0 35px;
+			height: 48px;
+			line-height: 24px;
+			#font-size(large);
+			#color(black)
+		}
+		&__plan{
+			position: absolute;
+			width: 100%;
+			top: 135px;
+			padding: 35px 0px 20px 0px;
+			#bg-img("course-b-bg.png");
+			transition: all 0.5s;
+		}
+		&__times{
+			padding: 8px 0px 10px 0px;
+			margin: 0px 35px;
+			border-bottom: 1px solid #959aa0;
+			#line-height(22px);
+			#font-size(small);
+			#color(weak);
+		}
+		&__person{
+			padding-left: 1em;
+		}
+		&__price{
+			position: absolute;
+			bottom: 0px;
+			padding: 20px 35px;
+			#font-size(small);
+			#color(red);
+			#line-height(30px);
+			i{
+				font-style: normal;
+				#font-size(medium);
+			}
+		}
+		&:hover .recommend-course__plan{
+		top: 80px;
+		}
+	}
+}
+.footer{
+	#layout(footer);
+	#font-size(small);
+	.footer-link{
+		width: 1200px;
+		margin: 0 auto;
+		#line-height(12px);
+		padding: 30px 0 16px 40px;
+		&__item{
+			display: inline-block;
+			margin-right: 30px;
+			#color(white);
+			.fl();
+			&:hover{
+			#color(red);
+			};
+		}
+	}
+	.footer-copy{
+		width: 1200px;
+		margin: 0 auto;
+		padding-left: 40px;
+		#line-height(12px);
+		#color(weak);
+	}
+	.footer-share{
+		position: absolute;
+		width: 135px;
+		height: 32px;
+		right: 40px;
+		top: 34px;
+		&__item{
+			.fl();
+			display: block;
+			margin-right: 13px;
+			#square(32px);
+			#bg-img("icon-6-sprit_w32.png");
+			&_i_2{
+				background-position: 0 -32px;
+			}
+			&_i_3{
+				background-position: 0 -64px;
+			}
+		}
+	}
+}

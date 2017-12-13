@@ -1,0 +1,288 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Microsoft YaHei" !important;
+  min-width: 1200px;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  height: 60px;
+  background-color: #000;
+  position: relative;
+}
+.header .logo {
+  width: 128px;
+  height: 36px;
+  margin: 12px 25px;
+  background: url("../imgs/logo.png") no-repeat center;
+  background-size: contain;
+  float: left;
+}
+.header .nav {
+  height: 100%;
+  float: left;
+}
+.header .nav__item {
+  display: block;
+  float: left;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 25px;
+  color: #fbfbfb;
+  font-size: 14px;
+}
+.header .nav__item:hover {
+  background-color: #363c41;
+}
+.header .nav__item_icon_new {
+  background: url("../imgs/icon-new.png");
+  background-repeat: no-repeat;
+  background-position: 80px 10px;
+  background-color: #363c41;
+}
+.header .search {
+  padding-right: 25px;
+  position: relative;
+  margin: 12px 25px;
+  height: 36px;
+  float: right;
+}
+.header .search__input {
+  width: 242px;
+  outline: none;
+  background-color: #000;
+  line-height: 36px;
+  height: 36px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.header .search::before {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: "前端入门";
+  display: block;
+  width: 72px;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: #2b333b;
+  color: #5c646b;
+  font-size: 12px;
+}
+.header .search__submit {
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 4px;
+  width: 22px;
+  height: 22px;
+  background: url("../imgs/icon-1-sprite_w22.png");
+  background-position: 0px 0px;
+}
+.header .profile {
+  float: right;
+}
+.header .profile__item {
+  position: relative;
+  display: block;
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 1px;
+}
+.header .profile__phone::before,
+.header .profile__message::before,
+.header .profile__mail::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 19px;
+  top: 19px;
+  width: 22px;
+  height: 22px;
+  background: url("../imgs/icon-1-sprite_w22.png");
+}
+.header .profile__phone::before {
+  background-position: 0px -22px;
+}
+.header .profile__message::before {
+  background-position: 0px -44px;
+}
+.header .profile__mail::before {
+  background-position: 0px -66px;
+}
+.header .profile__ava {
+  width: 36px;
+  height: 36px;
+  margin: 12px;
+  background: url("../imgs/ava.jpg");
+  background-size: 100%;
+  border-radius: 50%;
+}
+.banner {
+  height: 560px;
+  background-color: #f3f5f7;
+  position: relative;
+  width: 100%;
+  background: url("../imgs/bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: center center;
+}
+.recommend {
+  /*height: 800px;*/
+  background-color: #fff;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.recommend:after {
+  content: "";
+  display: block;
+  font-size: 0px;
+  line-height: 0px;
+  clear: both;
+  zoom: 1;
+}
+.recommend .recommend-course {
+  float: left;
+  width: 285px;
+  height: 342px;
+  position: relative;
+  top: -140px;
+  box-shadow: 0 8px 16px rgba(7, 17, 27, 0.2);
+  background-color: #fff;
+  background: url("../imgs/course-b-bg.png");
+  border-radius: 5px;
+  margin: 0px 20px 50px 0px;
+}
+.recommend .recommend-course:before {
+  content: "";
+  display: block;
+  width: 96%;
+  height: 3px;
+  left: 2%;
+  bottom: -5px;
+  position: absolute;
+  box-shadow: 0 8px 16px rgba(7, 17, 27, 0.2);
+  border-radius: 4px;
+  background-color: #fff;
+}
+.recommend .recommend-course:nth-child(4n) {
+  margin-right: 0px;
+}
+.recommend .recommend-course:last-child {
+  left: 50%;
+  margin-left: -142.5px;
+}
+.recommend .recommend-course__cover {
+  width: 100%;
+  height: 172px;
+  overflow: hidden;
+  margin: 0px;
+  border-radius: 5px;
+}
+.recommend .recommend-course__cover img {
+  width: 100%;
+}
+.recommend .recommend-course .caption {
+  margin: 0px;
+  padding: 0 35px;
+  height: 48px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #141914;
+}
+.recommend .recommend-course__plan {
+  position: absolute;
+  width: 100%;
+  top: 135px;
+  padding: 35px 0px 20px 0px;
+  background: url("../imgs/course-b-bg.png");
+  transition: all 0.5s;
+}
+.recommend .recommend-course__times {
+  padding: 8px 0px 10px 0px;
+  margin: 0px 35px;
+  border-bottom: 1px solid #959aa0;
+  line-height: 22px;
+  height: 22px;
+  font-size: 12px;
+  color: #959aa0;
+}
+.recommend .recommend-course__person {
+  padding-left: 1em;
+}
+.recommend .recommend-course__price {
+  position: absolute;
+  bottom: 0px;
+  padding: 20px 35px;
+  font-size: 12px;
+  color: red;
+  line-height: 30px;
+  height: 30px;
+}
+.recommend .recommend-course__price i {
+  font-style: normal;
+  font-size: 14px;
+}
+.recommend .recommend-course:hover .recommend-course__plan {
+  top: 80px;
+}
+.footer {
+  height: 98px;
+  background-color: #000;
+  position: relative;
+  font-size: 12px;
+}
+.footer .footer-link {
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 12px;
+  height: 12px;
+  padding: 30px 0 16px 40px;
+}
+.footer .footer-link__item {
+  display: inline-block;
+  margin-right: 30px;
+  color: #fbfbfb;
+  float: left;
+}
+.footer .footer-link__item:hover {
+  color: red;
+}
+.footer .footer-copy {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  line-height: 12px;
+  height: 12px;
+  color: #959aa0;
+}
+.footer .footer-share {
+  position: absolute;
+  width: 135px;
+  height: 32px;
+  right: 40px;
+  top: 34px;
+}
+.footer .footer-share__item {
+  float: left;
+  display: block;
+  margin-right: 13px;
+  width: 32px;
+  height: 32px;
+  background: url("../imgs/icon-6-sprit_w32.png");
+}
+.footer .footer-share__item_i_2 {
+  background-position: 0 -32px;
+}
+.footer .footer-share__item_i_3 {
+  background-position: 0 -64px;
+}

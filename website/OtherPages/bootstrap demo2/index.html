@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap大作业</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+</head>
+
+<body>
+	<!-- header区域 -->
+	<header>
+		<div class="container">
+			<nav class="navbar">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">IMOOC</a>
+				    </div>
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#">首页
+				         <span class="sr-only">(current)</span></a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">生日 <span class="caret"></span></a>
+				          <ul class="dropdown-menu bir-ul">
+				            <dl>
+				            	<dt>关系</dt>
+				            	<dd>朋友</dd>
+				            	<dd>爱人</dd>
+				            	<dd>姐妹</dd>
+				            </dl>
+				            <dl>
+				            	<dt>风味</dt>
+				            	<dd>巧克力</dd>
+				            	<dd>水果</dd>
+				            </dl>
+				          </ul>
+				        </li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">婚礼 <span class="caret"></span></a>
+				          <ul class="dropdown-menu wed-ul">
+				            <dl>
+				            	<dt>关系</dt>
+				            	<dd>朋友</dd>
+				            	<dd>爱人</dd>
+				            	<dd>姐妹</dd>
+				            </dl>
+				            <dl>
+				            	<dt>风味</dt>
+				            	<dd>巧克力</dd>
+				            	<dd>水果</dd>
+				            </dl>
+				            <dl>
+				            	<dt>主旋律</dt>
+				            	<dd>心形</dd>
+				            	<dd>卡通</dd>
+				            </dl>
+				          </ul>
+				        </li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">专用 <span class="caret"></span></a>
+				          <ul class="dropdown-menu bir-ul">
+				            <dl>
+				            	<dt>关系</dt>
+				            	<dd>朋友</dd>
+				            	<dd>爱人</dd>
+				            	<dd>姐妹</dd>
+				            </dl>
+				            <dl>
+				            	<dt>风味</dt>
+				            	<dd>巧克力</dd>
+				            	<dd>水果</dd>
+				            </dl>
+				          </ul>
+				        </li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">商城 <span class="caret"></span></a>
+				          <ul class="dropdown-menu bir-ul">
+				            <dl>
+				            	<dt>关系</dt>
+				            	<dd>朋友</dd>
+				            	<dd>爱人</dd>
+				            	<dd>姐妹</dd>
+				            </dl>
+				            <dl>
+				            	<dt>风味</dt>
+				            	<dd>巧克力</dd>
+				            	<dd>水果</dd>
+				            </dl>
+				          </ul>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				  <div class="nav navbar-nav nav-right">
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle glyphicon glyphicon-search" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+					          <ul class="dropdown-menu search-ul">
+								<form action="#" class="">
+									<div class="input-group">
+									  <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+									  <span class="input-group-addon" id="sizing-addon1">搜</span>
+									</div>
+								</form>
+					          </ul>
+					        </li>
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+					          <ul class="dropdown-menu log-ul">
+					            <form action="#" class="">
+									<div class="input-group">
+									  <label for="email" class="control-label">Email</label>
+									  <input type="email" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+									</div>
+									<div class="input-group">
+									  <label for="password" class="control-label">Password</label>
+									  <input type="password" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+									</div>
+									<button type="submit"> 登录 </button>
+									<input type="checkbox" name="rem" id="rem"><label for="rem">记住</label>
+									<div class="foot">
+										<span>新用户?</span><a href="#">注册</a> | <span href="#">忘记密码?</span>
+									</div>
+								</form>
+					          </ul>
+					        </li>
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle glyphicon glyphicon-shopping-cart" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+					          <ul class="dropdown-menu cart-ul">
+					            <span>$0.00(0)</span>
+					            <a href="#" class="btn">空</a>
+					          </ul>
+					        </li>
+				  </div>
+				</nav>
+		</div>
+	</header>
+
+	<!-- banner区 -->
+	<div id="banner" class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-xs-8 banner-left">
+					<h2>IMOOC <span>蛋糕</span></h2>
+					<p>特别的日子，特别的你</p>
+					<a href="#" class="btn">SHOP NOW</a>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4">
+					<img src="imgs/2.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- gallery区 -->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<div class="row">
+				<div id="g-one">
+					<div class="col-md-8 col-sm-8 col-xs-8">
+						<div class="pic">
+							<img src="imgs/g1.jpg">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+						</div>
+						<h5>巧克力蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<div class="pic">
+							<img src="imgs/g2.jpg">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+						</div>
+						<h5>千层蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+				</div>
+				<div id="g-two">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="pic">
+							<img src="imgs/g3.png">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+						</div>
+						<h5>Hello Kitty蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="pic">
+							<img src="imgs/g4.png">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+
+						</div>
+						<h5>巧克力千层蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="pic">
+							<img src="imgs/g5.png">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+						</div>
+						<h5>雪花千层蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="pic">
+							<img src="imgs/g6.png">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+						</div>
+						<h5> 卡通蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="pic">
+							<img src="imgs/g7.png">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+						</div>
+						<h5>巧克力心形蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="pic">
+							<img src="imgs/g8.png">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+						</div>
+						<h5>爱心巧克力蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="pic">
+							<img src="imgs/g9.png">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+						</div>
+						<h5>彩虹千层蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="pic">
+							<img src="imgs/g10.png">
+							<div class="view">
+								<span class="glyphicon glyphicon-eye-open">VIEW</span>
+								<a href="#" class="btn">SHOP NOW</a>
+							</div>
+						</div>
+						<h5>城堡巧克力蛋糕</h5>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i>&95.00</i>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- subscribe区 -->
+	<div class="sub" id="sub">
+		<div class="content">
+			<h1>Newsletter</h1>
+			<div class="input-group">
+    			<input type="text" class="form-control" placeholder="Search for...">
+    			<span class="input-group-btn">
+        		<button class="btn btn-default" type="button">Subscribe</button>
+      			</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer-bottom区 -->
+	<div class="footer-bottom" id="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<dl>
+						<dt>COMPANY</dt>
+						<dd>Pruducts</dd>
+						<dd>Work here</dd>
+						<dd>Train</dd>
+						<dd>Happiness</dd>
+						<dd>Leader</dd>
+					</dl>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<dl>
+						<dt>SERVICE</dt>
+						<dd>Support</dd>
+						<dd>FAQ</dd>
+						<dd>Train</dd>
+						<dd>Happiness</dd>
+					</dl>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<dl>
+						<dt>Order&Returns</dt>
+						<dd>Order Status</dd>
+						<dd>Shopping Policy</dd>
+						<dd>Train</dd>
+						<dd>Happiness</dd>
+						<dd>Leader</dd>
+					</dl>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<dl>
+						<dt>LEGAL</dt>
+						<dd>Pruducts</dd>
+						<dd>Work here</dd>
+						<dd>Train</dd>
+
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer区 -->
+	<footer>
+		Copyright&copy;2017 imooc.com All Rights | 京ICP备 13045542号2
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

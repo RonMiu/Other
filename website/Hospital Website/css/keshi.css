@@ -1,0 +1,115 @@
+.nav .nav-link .item_focus{
+	background:#1fa4f0;
+}
+
+
+.keshi-content{
+	margin-top: 20px;
+}
+.keshi-content .title{
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 3px solid #1fa4f0;
+	background: url('../img/bg-department.jpg') no-repeat left center;
+	background-size: auto 36px;
+}
+.keshi-content .title span{
+	display: inline-block;
+	text-indent: 20px;
+	color: white;
+}
+
+.keshi-content .hot-list{
+	border-left: 1px solid #eceef2;
+	border-right: 1px solid #eceef2;
+	border-bottom: 1px solid #eceef2;
+	margin-bottom: 20px;
+	position: relative;
+}
+.keshi-content  .hot-list .all-list ul{
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 20px;
+	width:800px;
+	box-sizing: border-box;
+	float: left;
+}
+.keshi-content  .hot-list .all-list ul li{
+	display: inline-block;
+	list-style: none;
+	font-size: 14px;
+	width: 120px;
+	padding-bottom: 10px;
+	color: #555555;
+}
+.keshi-content  .hot-list .right{
+	/*float: right;*/
+	position: absolute;
+	bottom: 25px;
+	right: 60px;
+	color: #0000FF;
+}
+.keshi-content .list-content .list{
+	float: left;
+	width: 210px;
+	height: 980+35px;
+	border: 1px solid #eceef2;
+	box-sizing: border-box;
+	padding-left: 40px;
+	padding-right: 10px;
+	background: url('../img/icon-menu-1.jpg') no-repeat;
+	background-position: 5px 0px;
+	background-size: auto 100%;
+}
+.keshi-content .list-content .list .item{
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #555555;
+
+}
+.keshi-content .list-content .list .item .right{
+	float: right;
+	display: inline-block;
+	background:url('../img/icon-arrow-right.png') no-repeat center center;
+	height: 35px;
+	width: 11px;
+}
+.keshi-content .list-content .list-item{
+	float: right;
+	/*overflow: hidden;*/
+	width: 760px;
+	box-sizing: border-box;
+	border:1px solid #eceef2;
+	margin: 0px 0px 50px 0px;
+	padding-top: 20px;
+	/*height: 50px;*/
+}
+.keshi-content .list-content .list-item dl{
+	list-style-type: none;
+	display: inline-block;
+	width: 100%;
+}
+.keshi-content .list-content .list-item dl dt{
+	box-sizing: border-box;
+	color: #00B3EA;
+	font-size:14px;
+	text-indent:20px;
+	list-style-type: none;
+	margin: 0px 20px 0px 20px;
+	display: block;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #eceef2;
+}
+.keshi-content .list-content .list-item dl dd{
+	margin: 10px 50px 10px 50px;
+}
+.keshi-content .list-content .list-item dl dd span{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 20%;
+	float: left;
+	font-size: 14px;
+	color:#777777;
+}

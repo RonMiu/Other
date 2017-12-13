@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>医院挂号查找</title>
+	<link rel="stylesheet" href="./css/layout.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/ui.css">
+	<link rel="stylesheet" href="./css/keshi.css">
+	<link rel="stylesheet" href="./css/hospital.css">
+	
+</head>
+<body>
+	<!-- 顶端 -->
+	<div class='top'>
+		<div class="wrap clearfix">
+			<p class="call">010-116114电话预约</p>
+			<p class="welcome">欢迎来到城市预约挂号统一平台 请&nbsp;
+			<a class="link" href="#">登录</a>
+			<a class="link" href="#">注册</a>&nbsp;&nbsp;&nbsp;
+			<a class="link" href="#">帮助中心</a>
+			</p>
+		</div>
+	</div>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="wrap clearfix">
+			<div class="header-logo"><img src="./img/logo.png" alt=""></div>
+			<div class="header-search">
+				<div class="ui-search-selected">医院</div>
+				<div class="ui-search-select-list none">
+					<a href="#">课室</a>
+					<a href="#">疾病</a>
+					<a href="#">医院</a>
+				</div>
+				<input type="text" placeholder="请输入搜索内容" class="ui-search-input">
+				<a class="ui-search-submit" href="#"></a>
+			</div>
+		</div>
+	</div>
+	<!-- 导航 -->
+	<div class="nav">
+		<div class="wrap">
+			<div class="nav-link">
+				<a href="#1" class="caption">首页</a>
+				<a href="#1" class="caption item_focus">按医院挂号</a>
+				<a href="#1" class="caption">按科室挂号</a>
+				<a href="#1" class="caption">按疾病挂号</a>
+				<a href="#1" class="caption">最新公告</a>
+				<a href="#1" class="caption right">社会知名医院</a>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- 内容展示区 -->
+	<div class="content wrap" id="content">
+		<!-- 条件筛选区 -->
+		<div class="content-filter" id="content-filter">
+			<!-- 按照医院类型查找 -->
+			<div class="content-filter-item" condition="type">
+				<p>医院类型</p>
+				 <a href=""><span class="condition condition_focus" condition-val="*">全部</span></a>
+			</div>
+			<!-- 按照医院等级查找 -->
+			<div class="content-filter-item" condition="level">
+				<p>医院等级</p>
+				<a href=""><span class="condition condition_focus" condition-val="*">全部</span></a>
+			</div>
+			<!-- 按照医院位置查找 -->
+			<div class="content-filter-item" condition="position">
+				<p>医院位置</p>
+				<a href=""><span class="condition condition_focus" condition-val="*">全部</span></a>
+
+			</div>
+		</div>
+		<!-- 医院列表展示 -->
+	  	<div id="datalist" class="datalist wrap">
+			<div class="item">没有符合条件的数据！</div>
+			<!-- <div class="item">
+				<div class="cover"><img src="img/hospital-1.jpg" /></div>
+				<div class="name">
+					首都医科大学附属北京同仁医院
+					<span class="level">三级甲等</span>
+				</div>
+				<div class="time">放号时间 : 8:45</div>
+				<div class="phone">010-58266699</div>
+				<div class="address">北京市东城区东交民巷1号(西区)；北京市东城区崇文门内大街8号(东区)</div>
+				<a class="button" href="#"> &nbsp; </a>
+			</div>
+
+			<div class="item">
+				<div class="cover"><img src="img/hospital-1.jpg" /></div>
+				<div class="name">
+					首都医科大学附属北京同仁医院
+					<span class="level">三级甲等</span>
+				</div>
+				<div class="time">放号时间 : 8:45</div>
+				<div class="phone">010-58266699</div>
+				<div class="address">北京市东城区东交民巷1号(西区)；北京市东城区崇文门内大街8号(东区)</div>
+				<a class="button" href="#"> &nbsp; </a>
+			</div> -->
+
+		</div>
+
+	<script type="text/tpl" id="datalist_tmplate">
+		<div class="item">
+			<div class="cover"><img src="{img}" /></div>
+			<div class="name">
+				{name}
+				<span class="level">{level}</span>
+			</div>
+			<div class="time">放号时间 : {time}</div>
+			<div class="phone">{phone}</div>
+			<div class="address">{address}</div>
+			<a class="button" href="#"> &nbsp; </a>
+		</div>
+	</script>
+		
+		
+	</div>
+
+	<!-- 页脚 -->
+	<div id="footer" class="footer">
+			Copyright&nbsp;&copy;&nbsp;2017慕课网版权所有	
+	</div>
+	<!-- 回到顶部 -->
+	<!-- <div class="ui-gotop"></div> -->
+	<script src="./js/jquery-3.2.1.js"></script>
+	<script src="./js/ui.js"></script>
+	<script src="./js/data.js"></script>
+	<script src="./js/hospital.js"></script>
+</body>
+</html>
